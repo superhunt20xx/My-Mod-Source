@@ -1,0 +1,8 @@
+D:\game\steam\steamapps\common\Baldi's Basics Plus\BALDI_Data\StreamingAssets\Modded\SH20XX.BBPP\Source\bin\Release\netstandard2.0\SH20XX.BBPP.deps.json
+D:\game\steam\steamapps\common\Baldi's Basics Plus\BALDI_Data\StreamingAssets\Modded\SH20XX.BBPP\Source\bin\Release\netstandard2.0\SH20XX.BBPP.dll
+D:\game\steam\steamapps\common\Baldi's Basics Plus\BALDI_Data\StreamingAssets\Modded\SH20XX.BBPP\Source\obj\Release\netstandard2.0\SH20XX.BBPP.csproj.AssemblyReference.cache
+D:\game\steam\steamapps\common\Baldi's Basics Plus\BALDI_Data\StreamingAssets\Modded\SH20XX.BBPP\Source\obj\Release\netstandard2.0\SH20XX.BBPP.GeneratedMSBuildEditorConfig.editorconfig
+D:\game\steam\steamapps\common\Baldi's Basics Plus\BALDI_Data\StreamingAssets\Modded\SH20XX.BBPP\Source\obj\Release\netstandard2.0\SH20XX.BBPP.AssemblyInfoInputs.cache
+D:\game\steam\steamapps\common\Baldi's Basics Plus\BALDI_Data\StreamingAssets\Modded\SH20XX.BBPP\Source\obj\Release\netstandard2.0\SH20XX.BBPP.AssemblyInfo.cs
+D:\game\steam\steamapps\common\Baldi's Basics Plus\BALDI_Data\StreamingAssets\Modded\SH20XX.BBPP\Source\obj\Release\netstandard2.0\SH20XX.BBPP.csproj.CoreCompileInputs.cache
+D:\game\steam\steamapps\common\Baldi's Basics Plus\BALDI_Data\StreamingAssets\Modded\SH20XX.BBPP\Source\obj\Release\netstandard2.0\SH20XX.BBPP.dll

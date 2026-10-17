@@ -1,0 +1,136 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <!--
+    SH20XX.BBPP build file - Baldi's Basics Plus 0.14.5 (BepInEx 5)
+
+    Build with:   dotnet build -c Release
+    Output:       bin/Release/netstandard2.0/SH20XX.BBPP.dll
+    Install:      copy that dll into BepInEx/plugins/
+
+    The game folder below is only used to resolve the reference assemblies.
+    Change GameDir if your install lives somewhere else.
+  -->
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <AssemblyName>SH20XX.BBPP</AssemblyName>
+    <RootNamespace>SH20XX.BBPP</RootNamespace>
+    <LangVersion>9.0</LangVersion>
+    <ImplicitUsings>disable</ImplicitUsings>
+    <Nullable>disable</Nullable>
+    <AppendTargetFrameworkToOutputPath>true</AppendTargetFrameworkToOutputPath>
+    <GenerateAssemblyInfo>true</GenerateAssemblyInfo>
+    <DebugType>none</DebugType>
+    <NoWarn>$(NoWarn);CS0649;CS0169</NoWarn>
+    <GameDir Condition="'$(GameDir)' == ''">D:\game\steam\steamapps\common\Baldi's Basics Plus</GameDir>
+    <ManagedDir>$(GameDir)\BALDI_Data\Managed</ManagedDir>
+    <BepInExCoreDir>$(GameDir)\BepInEx\core</BepInExCoreDir>
+    <BepInExPluginsDir>$(GameDir)\BepInEx\plugins</BepInExPluginsDir>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <!--
+      The game ships its own netstandard.dll facade, but referencing it directly
+      breaks the SDK's netstandard2.0 reference assemblies (circular type
+      forwarders), so it is deliberately not referenced here.
+    -->
+    <Reference Include="BepInEx">
+      <HintPath>$(BepInExCoreDir)\BepInEx.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+
+    <Reference Include="0Harmony">
+      <HintPath>$(BepInExCoreDir)\0Harmony.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+
+    <Reference Include="Assembly-CSharp">
+      <HintPath>$(ManagedDir)\Assembly-CSharp.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+
+    <Reference Include="MTM101BaldAPI">
+      <HintPath>$(BepInExPluginsDir)\MTM101BaldAPI.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+
+    <Reference Include="CustomMainMenusAPI">
+      <HintPath>$(BepInExPluginsDir)\CustomMainMenusAPI.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+
+    <!--
+      Plus Studio (the level editor) and its level loader. These are soft
+      dependencies at runtime: StudioEditorRegistration.Available() probes for the
+      types before touching them, so the mod still loads when Plus Studio is absent.
+      They are needed to compile, because a missing assembly reference cannot be
+      deferred.
+    -->
+    <Reference Include="PlusLevelStudio">
+      <HintPath>$(BepInExPluginsDir)\PlusLevelStudio.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+
+    <Reference Include="PlusStudioLevelLoader">
+      <HintPath>$(BepInExPluginsDir)\PlusStudioLevelLoader.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+
+    <Reference Include="PlusStudioLevelFormat">
+      <HintPath>$(BepInExPluginsDir)\PlusStudioLevelFormat.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+
+    <!-- Custom game-mode framework, used by the Explore Normal and Mezzanine menus. -->
+    <Reference Include="ModdedModesAPI">
+      <HintPath>$(BepInExPluginsDir)\ModdedModesAPI.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+
+    <!-- TMP_Text is reached through ModdedModesAPI's SeedInput; TMP_Text derives
+         from MaskableGraphic, which lives in UnityEngine.UI. -->
+    <Reference Include="Unity.TextMeshPro">
+      <HintPath>$(ManagedDir)\Unity.TextMeshPro.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+
+    <Reference Include="UnityEngine.UI">
+      <HintPath>$(ManagedDir)\UnityEngine.UI.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+
+    <Reference Include="UnityEngine">
+      <HintPath>$(ManagedDir)\UnityEngine.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+
+    <Reference Include="UnityEngine.CoreModule">
+      <HintPath>$(ManagedDir)\UnityEngine.CoreModule.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+
+    <Reference Include="UnityEngine.AudioModule">
+      <HintPath>$(ManagedDir)\UnityEngine.AudioModule.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+
+    <Reference Include="UnityEngine.IMGUIModule">
+      <HintPath>$(ManagedDir)\UnityEngine.IMGUIModule.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+
+    <!-- Collider / ColliderGroup / OnTriggerEnter need the physics module. -->
+    <Reference Include="UnityEngine.PhysicsModule">
+      <HintPath>$(ManagedDir)\UnityEngine.PhysicsModule.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+
+    <!-- Canvas lives in the UI module, not in UnityEngine.UI. -->
+    <Reference Include="UnityEngine.UIModule">
+      <HintPath>$(ManagedDir)\UnityEngine.UIModule.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+  </ItemGroup>
+
+</Project>
+
