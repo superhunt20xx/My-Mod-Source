@@ -1,0 +1,8 @@
+D:\game\steam\steamapps\common\Baldi's Basics Plus\BullyDetentionMod\bin\Release\netstandard2.0\BullyDetention67.deps.json
+D:\game\steam\steamapps\common\Baldi's Basics Plus\BullyDetentionMod\bin\Release\netstandard2.0\BullyDetention67.dll
+D:\game\steam\steamapps\common\Baldi's Basics Plus\BullyDetentionMod\obj\Release\netstandard2.0\BullyDetention67.csproj.AssemblyReference.cache
+D:\game\steam\steamapps\common\Baldi's Basics Plus\BullyDetentionMod\obj\Release\netstandard2.0\BullyDetention67.GeneratedMSBuildEditorConfig.editorconfig
+D:\game\steam\steamapps\common\Baldi's Basics Plus\BullyDetentionMod\obj\Release\netstandard2.0\BullyDetention67.AssemblyInfoInputs.cache
+D:\game\steam\steamapps\common\Baldi's Basics Plus\BullyDetentionMod\obj\Release\netstandard2.0\BullyDetention67.AssemblyInfo.cs
+D:\game\steam\steamapps\common\Baldi's Basics Plus\BullyDetentionMod\obj\Release\netstandard2.0\BullyDetention67.csproj.CoreCompileInputs.cache
+D:\game\steam\steamapps\common\Baldi's Basics Plus\BullyDetentionMod\obj\Release\netstandard2.0\BullyDetention67.dll
