@@ -1,0 +1,8 @@
+D:\game\steam\steamapps\common\Baldi's Basics Plus\ChairMayhemMod\obj\Release\netstandard2.0\ChairMayhem.csproj.AssemblyReference.cache
+D:\game\steam\steamapps\common\Baldi's Basics Plus\ChairMayhemMod\obj\Release\netstandard2.0\ChairMayhem.GeneratedMSBuildEditorConfig.editorconfig
+D:\game\steam\steamapps\common\Baldi's Basics Plus\ChairMayhemMod\obj\Release\netstandard2.0\ChairMayhem.AssemblyInfoInputs.cache
+D:\game\steam\steamapps\common\Baldi's Basics Plus\ChairMayhemMod\obj\Release\netstandard2.0\ChairMayhem.AssemblyInfo.cs
+D:\game\steam\steamapps\common\Baldi's Basics Plus\ChairMayhemMod\obj\Release\netstandard2.0\ChairMayhem.csproj.CoreCompileInputs.cache
+D:\game\steam\steamapps\common\Baldi's Basics Plus\ChairMayhemMod\bin\Release\netstandard2.0\ChairMayhem.deps.json
+D:\game\steam\steamapps\common\Baldi's Basics Plus\ChairMayhemMod\bin\Release\netstandard2.0\ChairMayhem.dll
+D:\game\steam\steamapps\common\Baldi's Basics Plus\ChairMayhemMod\obj\Release\netstandard2.0\ChairMayhem.dll
